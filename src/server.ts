@@ -1,7 +1,12 @@
-import "dotenv/config";
-import app from "./app.js"
-let PORT=process.env.PORT;
+import 'dotenv/config';
+import app from './app';
+import connectDB from './config/DBconnection';
 
-app.listen(PORT,()=>{
-    console.log(`http://localhost:4444`);
+connectDB().then(() => {
+    app.listen(process.env.PORT, () => {
+        console.log("http://localhost:4444");
+    })
+
+}).catch((error) => {
+    console.log(error);
 })

@@ -5,26 +5,31 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fayasktr/studentManagementSyste.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Fayasktr/studentManagementSystem/issues"
+  },
+  "homepage": "https://github.com/Fayasktr/studentManagementSystem#readme",
   "dependencies": {
-    "@prisma/client": "^7.9.1",
     "bcryptjs": "^3.0.3",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "express-session": "^1.19.0"
+    "mongoose": "^9.8.1"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/express": "^5.0.6",
-    "@types/node": "^26.1.1",
-    "nodemon": "^3.1.14",
-    "prisma": "^7.9.1",
+    "@types/node": "^26.1.2",
     "tsx": "^4.23.1",
     "typescript": "^7.0.2"
   }
