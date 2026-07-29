@@ -82,15 +82,14 @@ npm start
 
 ## 🛣 API Endpoints
 
-### Student Routes (`/api/students`)
+### Student Routes
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
-| `GET` | `/api/students/:id` | Fetch student profile |
-| `PUT` | `/api/students/:id` | Update student profile |
-| `POST` | `/api/students/:id/enroll` | Enroll student in a course |
-| `DELETE` | `/api/students/:id` | Delete student profile |
-| `GET` | `/api/students/:id/marks` | Fetch student marks |
+| `POST` | `/` | Create a new student |
+| `GET` | `/:id` | Fetch student by ID |
+| `PUT` | `/:id` | Update student by ID |
+| `DELETE` | `/:id` | Delete student by ID |
 
 ---
 
