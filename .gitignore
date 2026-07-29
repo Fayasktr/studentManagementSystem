@@ -1,6 +1,3 @@
 node_modules
 .env
-student-management-system
-test.js
-test.ts
 /src/generated/prisma
