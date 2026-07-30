@@ -91,6 +91,14 @@ npm start
 | `PUT` | `/:id` | Update student by ID |
 | `DELETE` | `/:id` | Delete student by ID |
 
+### Admin Routes (`/admin`)
+
+| Method | Endpoint | Description | Payload / Body |
+| :--- | :--- | :--- | :--- |
+| `POST` | `/admin/assign/:id` | Assign course to student | `{"course": "Computer Science"}` |
+| `PUT` | `/admin/marks/:id` | Update student marks | `{"marks": [85, 92, 88]}` |
+| `DELETE` | `/admin/delete/:id` | Delete student profile | N/A |
+
 ---
 
 ## 🛠 Tech Stack
